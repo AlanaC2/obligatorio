@@ -6,168 +6,154 @@ public class DJA {
 	
 public static void main(String[] args) {
 Scanner lector = new Scanner(System.in);
-	
-System.out.println("|Bienvenido al programa|");
-System.out.println("|De que manera se presenta|" );
-System.out.println("1) {Persona físca}");
-System.out.println("2) {Persona juridica}");
-int res = lector.nextInt();
 
-if (res==1) { 
-	
-	
-	System.out.println("Ingreso como persona fisica!");
-	System.out.println("Porfavor ingrese su nombre completo y sus apellidos");
-	String nom = lector.next();
-	
-	
-	System.out.println("ingrese su cedula de identidad sin puntos ni guiones");
-    int ced = lector.nextInt();
-	
-	
-	
-	
-System.out.println("Ingrese el monto total de sus ingresos mensuales mes a mes");
-	
-	
-	System.out.println("Mes de enero");
-	double in11 = lector.nextDouble();
-	
-	System.out.println("Mes de febrero");
-	double in1 = lector.nextDouble();
-	
-	
-	System.out.println("Mes de marzo");
-	double in = lector.nextDouble();
-	
-	System.out.println("Mes de abil");
-    double in2 = lector.nextDouble();
-    
-    System.out.println("Mes de mayo");
-    double in3 = lector.nextDouble();
-    
-    System.out.println("Mes de junio");
-    double in4 = lector.nextDouble();
-    
-    System.out.println("Mes de julio");
-    double in5 = lector.nextDouble();
-    
-    System.out.println("Mes de agosto");
-    double in6 = lector.nextDouble();
-    
-    System.out.println("Mes de septiembre");
-    double in7 = lector.nextDouble();
-    
-    System.out.println("Mes de octubre ");
-    double in8 = lector.nextDouble();
-    
-    System.out.println("Mes de noviembre");
-    double in9 = lector.nextDouble();
-    
-    System.out.println("Mes de diciembre");
-    double in10 = lector.nextDouble();
-    
-    System.out.println("Ingrese sus deducciones");
-	double dedu = lector.nextDouble();
+        System.out.println("|Bienvenido al programa|");
+        System.out.println("|¿De qué manera se presenta?|");
+        System.out.println("1) Persona física");
+        System.out.println("2) Persona jurídica");
+        int res = lector.nextInt();
 
-	System.out.println("ingrese sus creditos fiscales");
-	double fis = lector.nextInt();
-	
+        if (res == 1) {
+            System.out.println("¡Ingreso como persona física!");
+            System.out.print("Por favor, ingrese su primer nombre: ");
+            String nom = lector.next();
 
-	System.out.println("ingrese el total de sus impuestos pagados");
-	double imp = lector.nextDouble();
-	
-	System.out.println("PERSONA FISICA");
-	System.out.println("Su nombre es:" + nom);
-	System.out.println("Su cedula de identidad es:" + ced);
-	
-	
-	System.out.println("su monto tal es: " + (in11 + in1 + in + in2 +in3 +in4 +in5 + in6 +in7 + in8 +in9 +in10));
-	System.out.println("sus deducciones son:" + dedu);
-	System.out.println("Sus creditos fiscales son:" + fis);
-    }else if(res == 2) {
-    	
-    	System.out.println("Ingreso como persona juridica!");
-    	
-    	System.out.println("Porfavor ingrese su nombre completo y sus apellidos");
-    	String nom = lector.next();
-    	
-    	
-    	System.out.println("ingrese su cedula de identidad sin puntos ni guiones");
-        int ced = lector.nextInt();
-    	
-    	
-    	
-    	
-    	System.out.println("Ingrese el monto total de sus ingresos mensuales mes a mes");
+            String nom2 = "";
+            System.out.println("¿Usted tiene segundo nombre? (Sí/No)");
+            String respuesta = lector.next();
+            if (respuesta.equalsIgnoreCase("sí") || respuesta.equalsIgnoreCase("si")) {
+                System.out.print("Ingrese su segundo nombre: ");
+                nom2 = lector.next();
+            }
 
-    	System.out.println("Mes de enero");
-    	double in11 = lector.nextDouble();
-    	
-    	System.out.println("Mes de febrero");
-    	double in1 = lector.nextDouble();
-    	
-    	
-    	System.out.println("Mes de marzo");
-    	double in = lector.nextDouble();
-    	
-    	System.out.println("Mes de abil");
-        double in2 = lector.nextDouble();
-        
-        System.out.println("Mes de mayo");
-        double in3 = lector.nextDouble();
-        
-        System.out.println("Mes de junio");
-        double in4 = lector.nextDouble();
-        
-        System.out.println("Mes de julio");
-        double in5 = lector.nextDouble();
-        
-        System.out.println("Mes de agosto");
-        double in6 = lector.nextDouble();
-        
-        System.out.println("Mes de septiembre");
-        double in7 = lector.nextDouble();
-        
-        System.out.println("Mes de octubre ");
-        double in8 = lector.nextDouble();
-        
-        System.out.println("Mes de noviembre");
-        double in9 = lector.nextDouble();
-        
-        System.out.println("Mes de diciembre");
-        double in10 = lector.nextDouble();
-        
-        System.out.println("Ingrese sus deducciones");
-    	double dedu = lector.nextDouble();
+            System.out.print("Por favor, ingrese su primer apellido: ");
+            String ap1 = lector.next();
+            System.out.print("Ingrese su segundo apellido: ");
+            String ap2 = lector.next();
 
-    	System.out.println("ingrese sus creditos fiscales");
-    	double fis = lector.nextInt();
-    	
-    	System.out.println("PERSONA JURIDICA");
-    	
-    	System.out.println("Su nombre es:" + nom);
-    	System.out.println("Su cedula de identidad es:" + ced);
-    	System.out.println("su monto tal es: " + (in11 + in1 + in + in2 +in3 +in4 +in5 + in6 +in7 + in8 +in9 +in10));
-    	System.out.println("sus deducciones son:" + dedu);
-    	System.out.println("Sus creditos fiscales son:" + fis);
-    	
-    	
-    	System.out.println("Ingrese sus deducciones");
-    	double dedu2 = lector.nextDouble();
+            System.out.print("Ingrese su cédula de identidad sin puntos ni guiones: ");
+            String ced = lector.next();
+            
+            System.out.println("Digite sus ingresos mes a mes");
+            double sumaIngresos = 0;
 
-    	System.out.println("ingrese sus creditos fiscales");
-    	double fis2 = lector.nextInt();
+            System.out.print("Mes de enero: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de febrero: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de marzo: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de abril: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de mayo: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de junio: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de julio: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de agosto: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de septiembre: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de octubre: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de noviembre: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de diciembre: ");
+            sumaIngresos += lector.nextDouble();
 
-    	System.out.println("ingrese el total de sus impuestos pagados");
-    	double imp2 = lector.nextDouble();
-    	
-    System.out.println("PERSONA JURADA");
-    System.out.println("Sus deducciones son:" + dedu2 );
-    System.out.println("Sus creditos fiscales son:" + fis2);
-    System.out.println("El total de sus impuestos pagados es:" + imp2);
-    	
-    	
+         
+
+            System.out.print("Ingrese sus deducciones: ");
+            double dedu = lector.nextDouble();
+
+            System.out.print("Ingrese sus créditos fiscales: ");
+            double fis = lector.nextDouble();
+
+            System.out.print("Ingrese el total de sus impuestos pagados: ");
+            double imp = lector.nextDouble();
+
+            System.out.println("PERSONA FÍSICA");
+            System.out.print("Su nombre es: " + nom);
+            if (!nom2.equals("")) {
+                System.out.print(" " + nom2);
+            }
+            System.out.println();
+            System.out.println("Su primer apellido es: " + ap1);
+            System.out.println("Su segundo apellido es: " + ap2);
+            System.out.println("Su cédula de identidad es: " + ced);
+            System.out.println("El monto total de sus ingresos mensuales es: " + sumaIngresos);
+            System.out.println("Sus deducciones son: " + dedu);
+            System.out.println("Sus créditos fiscales son: " + fis);
+            System.out.println("El total de sus impuestos pagados es: " + imp);
+
+        } else if (res == 2) {
+            System.out.println("¡Ingreso como persona jurídica!");
+
+            System.out.print("Por favor, ingrese su nombre completo o razón social: ");
+            String nom9 = lector.next();
+
+            System.out.print("Ingrese su número RUC: ");
+            String Ruc = lector.next();
+
+            System.out.print("Digite el número total de sus activos: ");
+            double act = lector.nextDouble();
+
+            System.out.print("Ingrese el monto total de sus deudas: ");
+            double deud = lector.nextDouble();
+
+            System.out.print("Ingrese el número total de todos sus empleados: ");
+            int emp = lector.nextInt();
+            
+            System.out.println("Digite los ingresos de su empresa mes a mes");
+            double sumaIngresos = 0;
+
+            System.out.print("Mes de enero: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de febrero: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de marzo: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de abril: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de mayo: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de junio: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de julio: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de agosto: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de septiembre: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de octubre: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de noviembre: ");
+            sumaIngresos += lector.nextDouble();
+            System.out.print("Mes de diciembre: ");
+            sumaIngresos += lector.nextDouble();
+
+          
+
+            System.out.print("Ingrese sus deducciones: ");
+            double dedu = lector.nextDouble();
+
+            System.out.print("Ingrese sus créditos fiscales: ");
+            double fis = lector.nextDouble();
+
+            System.out.print("Ingrese el total de sus impuestos pagados: ");
+            double imp = lector.nextDouble();
+
+            System.out.println("PERSONA JURÍDICA");
+            System.out.println("Su nombre o razón social es: " + nom9);
+            System.out.println("Su número RUC es: " + Ruc);
+            System.out.println("Sus activos son: " + act);
+            System.out.println("Sus deudas son: " + deud);
+            System.out.println("El número total de empleados es: " + emp);
+            System.out.println("El monto total de sus ingresos mensuales es: " + sumaIngresos);
+            System.out.println("Sus deducciones son: " + dedu);
+            System.out.println("Sus créditos fiscales son: " + fis);
+            System.out.println("El total de sus impuestos pagados es: " + imp);
     }
 
 	 
@@ -182,7 +168,7 @@ System.out.println("Ingrese el monto total de sus ingresos mensuales mes a mes")
 	
 
 
-			}
-	}
+			
+	
 
 
